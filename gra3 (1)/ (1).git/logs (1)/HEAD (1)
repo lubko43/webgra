@@ -1,0 +1,23 @@
+0000000000000000000000000000000000000000 269d26ccd523d9a9790d3da6e0fe37c2d35a05ab Anna <andreikiv.ann@gmail.com> 1520078065 +0200	commit (initial): Start to track project
+269d26ccd523d9a9790d3da6e0fe37c2d35a05ab 68ad6995ba2a1b0773edf85ddf5a72ea9d126194 Anna <andreikiv.ann@gmail.com> 1520079186 +0200	commit: Logo changed
+68ad6995ba2a1b0773edf85ddf5a72ea9d126194 1329807551226fd8dfb0504109455824054ca160 Anna <andreikiv.ann@gmail.com> 1520081277 +0200	commit: getting out social icons
+1329807551226fd8dfb0504109455824054ca160 c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 Anna <andreikiv.ann@gmail.com> 1520185642 +0200	commit: Додано чат
+c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 1329807551226fd8dfb0504109455824054ca160 Anna <andreikiv.ann@gmail.com> 1520185984 +0200	checkout: moving from master to chat
+1329807551226fd8dfb0504109455824054ca160 15827be4c13cda5069333403f047c90cc21eed8c Anna <andreikiv.ann@gmail.com> 1520187464 +0200	commit: anouther chat
+15827be4c13cda5069333403f047c90cc21eed8c c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 Anna <andreikiv.ann@gmail.com> 1520187773 +0200	checkout: moving from chat to master
+c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 Anna <andreikiv.ann@gmail.com> 1520284473 +0200	checkout: moving from master to wheather_widget
+c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 1222e914fcf0bed925c46e4be47a5c64884630ff Anna <andreikiv.ann@gmail.com> 1520284559 +0200	commit: різні віджети погоди
+1222e914fcf0bed925c46e4be47a5c64884630ff c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 Anna <andreikiv.ann@gmail.com> 1520284626 +0200	checkout: moving from wheather_widget to master
+c83d22c6f73f1310d8b63287f1d7e7a6f8d3e6e1 d03ecd1e629e04ed3166c142268676c036faf129 Anna <andreikiv.ann@gmail.com> 1520965517 +0200	commit: додано галерею з фото
+d03ecd1e629e04ed3166c142268676c036faf129 87bf2e936c52063ed32b844847606fc47172fed2 Anna <andreikiv.ann@gmail.com> 1520968161 +0200	commit: почистила html
+87bf2e936c52063ed32b844847606fc47172fed2 7186c380914fb487abe839f4551818c9a6d1ccce Anna <andreikiv.ann@gmail.com> 1521025595 +0200	commit: впорядковано нову галерею
+7186c380914fb487abe839f4551818c9a6d1ccce 1222e914fcf0bed925c46e4be47a5c64884630ff Anna <andreikiv.ann@gmail.com> 1521056625 +0200	checkout: moving from master to wheather_widget
+1222e914fcf0bed925c46e4be47a5c64884630ff 15827be4c13cda5069333403f047c90cc21eed8c Anna <andreikiv.ann@gmail.com> 1521056837 +0200	checkout: moving from wheather_widget to chat
+15827be4c13cda5069333403f047c90cc21eed8c 7186c380914fb487abe839f4551818c9a6d1ccce Anna <andreikiv.ann@gmail.com> 1521057080 +0200	checkout: moving from chat to master
+7186c380914fb487abe839f4551818c9a6d1ccce cfb1b91d6fb69549171142e1db59d4f6e8532cf4 Anna <andreikiv.ann@gmail.com> 1521107994 +0200	commit: працююча галерея
+cfb1b91d6fb69549171142e1db59d4f6e8532cf4 87f2414f76242bb9ff2ae41e38f0d587b1409a45 Anna <andreikiv.ann@gmail.com> 1521109418 +0200	commit: почистила сss
+87f2414f76242bb9ff2ae41e38f0d587b1409a45 82dbf36d2a1411a9e5ee9b13ab6b70bfe7275960 Anna <andreikiv.ann@gmail.com> 1521110203 +0200	commit: видалено стару галерею
+82dbf36d2a1411a9e5ee9b13ab6b70bfe7275960 7186c380914fb487abe839f4551818c9a6d1ccce Anna <andreikiv.ann@gmail.com> 1521364068 +0200	checkout: moving from master to 7186c380914fb487abe839f4551818c9a6d1ccce
+7186c380914fb487abe839f4551818c9a6d1ccce 82dbf36d2a1411a9e5ee9b13ab6b70bfe7275960 Anna <andreikiv.ann@gmail.com> 1521364390 +0200	checkout: moving from 7186c380914fb487abe839f4551818c9a6d1ccce to 82dbf36d2a1411a9e5ee9b13ab6b70bfe7275960
+82dbf36d2a1411a9e5ee9b13ab6b70bfe7275960 22ef0e83da669f9853d682731b852be6b8af2c35 Anna <andreikiv.ann@gmail.com> 1521368964 +0200	commit: Змінено шляхидля картинок на абсолютні для коректного відображення після коміту
+22ef0e83da669f9853d682731b852be6b8af2c35 a00eaf4ec40eca55c118ac7383b0cbd5b3c8c2c8 Anna <andreikiv.ann@gmail.com> 1527661127 +0300	commit: single page website

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href=" ">
+    <title>GRA</title>
+    <!-- Datepicker in form -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Helper Styles -->
+    <!--    <link href="css/loaders.css" rel="stylesheet">-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <!-- Including google font-->
+    <link rel="stylesheet" href="components/slick-slider/slick.css">
+    <link rel="stylesheet" href="components/slick-slider/slick-theme.css">
+    <!-- Font Awesome Style -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <!-- nanogallery2 -->
+    <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
+
+
+    <!--
+     <script type='text/javascript'>(function(s) {var head = document.getElementsByTagName('HEAD').item(0);var s= document.createElement('script');s.type = 'text/javascript';s.src='//s3-us-west-2.amazonaws.com/formget/js/popup.js';head.appendChild(s); var options = {'tabKey': 'LNI6-289890/t','tabtext':'Contact us','height': '463','width': '350','tabPosition':'right','textColor': 'ffffff','tabBackground': '17B86F','fontSize': '16','tabbed':''};s.onload = s.onreadystatechange = function() {var rs = this.readyState;if (rs)if (rs != 'complete')if (rs != 'loaded')return;try {sideBar = new buildTabbed();sideBar.initializeOption(options);sideBar.loadContent();sideBar.buildHtml();} catch (e) {}  };var scr = document.getElementsByTagName(s)[0];})(document, 'script');</script>
+     
+
+-->
+
+    <!--
+    
+      <script id="chatBroEmbedCode">
+        /* Chatbro Widget Embed Code Start */
+        function ChatbroLoader(chats, async) {
+            async = !1 !== async;
+            var params = {
+                    embedChatsParameters: chats instanceof Array ? chats : [chats],
+                    lang: navigator.language || navigator.userLanguage,
+                    needLoadCode: 'undefined' == typeof Chatbro,
+                    embedParamsVersion: localStorage.embedParamsVersion,
+                    chatbroScriptVersion: localStorage.chatbroScriptVersion
+                },
+                xhr = new XMLHttpRequest;
+            xhr.withCredentials = !0, xhr.onload = function() {
+                eval(xhr.responseText)
+            }, xhr.onerror = function() {
+                console.error('Chatbro loading error')
+            }, xhr.open('GET', '//www.chatbro.com/embed.js?' + btoa(unescape(encodeURIComponent(JSON.stringify(params)))), async), xhr.send()
+        }
+        /* Chatbro Widget Embed Code End */
+        ChatbroLoader({
+            encodedChatId: '1pPJ'
+        });
+    </script>
+-->
+
+</head>
+
+<body>
+    <!--
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="loader loader-bg">
+        <div class="loader-inner ball-clip-rotate-pulse">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+-->
+
+    <!-- Top Navigation -->
+
+    <div class="container">
+        <div class="row">
+            <nav id="navbar" class="navbar navbar-toggleable-md mb-4 top-bar navbar-static-top  sps sps--abv" style="background-color: #e3f2fdb0;">
+                <button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon"></i>
+                    </span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/img/logo_black.png" style="width: 50px;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#myCarousel">Головна
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Мандрівки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Чому ми</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#myFooter">Контакти</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style ">
+                        <a class="a2a_button_facebook nav-link"></a>
+                        <a class="a2a_button_email nav-link"></a>
+                        <a class="a2a_button_viber nav-link"></a>
+                    </div>
+
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+                </div>
+
+
+
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <div class="conslider_wrap" id="myCarousel">
+        <div class="slider">
+            <!-- Binding of trip  -->
+        </div>
+
+
+    </div>
+
+    <section id="aboutus">
+        <div class="container">
+            <h2 class="text-center h2_style">Наша команда</h2>
+            <p class="text-center">Привіт! Якщо ти вже зайшов на нашу сторінку, то давай знайомитися. Гра - це твій провідник, який проживе твою
+                мандрівку разом з тобою. Кожна наша подорож є окремою пригодою, можеш бути впевнений, без пригод ми не подорожуємо).
+                Наша історія почалась із трьох друзів: музикант-дизайнер,скелелаз-айтішний та стрілець-маркетолог, які люблять
+                мандрувати.Зараз у нас є одна мета - обїздити увесь Світ та допомогти українцям активно відпочивати. Головне
+                - це бажання пригод, а компанія та місце знайдуться!</p>
+        </div>
+    </section>
+    <!--
+    <section>
+    <div class="container">
+      <div class="slider-for">
+          <div><p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consectetur perferendis quo pariatur provident voluptas magnam autem accusantium quos vel at assumenda ipsum suscipit facere, facilis expedita ut animi eligendi vero doloremque iusto ab rem. Tempora similique itaque praesentium eos.</p></div>
+          <div><p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consectetur perferendis quo pariatur provident voluptas magnam autem accusantium quos vel at assumenda ipsum suscipit facere, facilis expedita ut animi eligendi vero doloremque iusto ab rem. Tempora similique itaque praesentium eos.</p></div>
+          <div><p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consectetur perferendis quo pariatur provident voluptas magnam autem accusantium quos vel at assumenda ipsum suscipit facere, facilis expedita ut animi eligendi vero doloremque iusto ab rem. Tempora similique itaque praesentium eos.</p></div>
+          <div><p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consectetur perferendis quo pariatur provident voluptas magnam autem accusantium quos vel at assumenda ipsum suscipit facere, facilis expedita ut animi eligendi vero doloremque iusto ab rem. Tempora similique itaque praesentium eos.</p></div>
+      </div>
+      
+      
+      <div class="slider-nav">
+         
+          <div><img src="./img/img/gra13.jpg" class="slider_face"></div>
+          <div ><img src="./img/img/gra13.jpg" class="slider_face"></div>
+          <div ><img src="./img/img/gra13.jpg" class="slider_face"></div>
+          <div ><img src="./img/img/gra13.jpg" class="slider_face"></div>
+      </div>
+   </div>
+   </section>
+-->
+    <!--При натиску на стрілки скролиться слайдер 
+    Скаче в залежності від  кількості тексту
+    Додати посилання на ФБ
+    -->
+
+
+    <section id="caruselTestem">
+        <h2 class="text-center">Трішки про нас</h2>
+        <div class="container ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
+
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3">
+
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum architecto tempora, excepturi blanditiis
+                            veniam sunt totam quo natus! Odio, ab.
+                            <span class="socail-l ml-3 mb-3">
+                                <div class="a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow">
+                                    <a class="a2a_button_facebook" data-a2a-follow="andriy.chess"></a>
+                                </div>
+                            </span>
+                        </h2>
+
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum architecto tempora, excepturi blanditiis
+                            veniam sunt totam quo natus! Odio, ab.</h2>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum architecto tempora, excepturi blanditiis
+                            veniam sunt totam quo natus! Odio, ab.</h2>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum architecto tempora, excepturi blanditiis
+                            veniam sunt totam quo natus! Odio, ab.</h2>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feature-section" id="features">
+        <div class="container-fluid no_space">
+            <h2 class="text-center h2_style">Наші мандрівки</h2>
+            <p class="text-center sub-text">GRA #гуртуйся #грай #відпочивай</p>
+
+            <div id="trip-section" class="container-fluid no_space">
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <div class="slick_wrap">
+        <div class="slick_gallery">
+            <div class="slick_gallery-img"></div>
+            <div class="slick_gallery-img"></div>
+            <div class="slick_gallery-img"></div>
+        </div>
+        <div class="img_descr">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis officiis praesentium commodi sit pariatur facere, quaerat, velit distinctio itaque, totam excepturi voluptates consequuntur porro! Et laborum nostrum officia voluptate eum, dolorem sequi odit. Maxime excepturi quod officiis iste, quia doloribus incidunt quae nobis qui iure earum voluptates molestias maiores.</p>
+            <a href="">Lorem ipsum.</a>
+        </div>
+    </div>
+-->
+    <!-- About 
+    ================================================== -->
+    <section class="about-sec parallax-section" id="about">
+        <!-- <div class="container"> -->
+            <div class="row" style="margin: 0px;">
+                <div class="col-md-12">
+                    <h3 class="text-center align-middle h2_style h2_color">Чому варто мандрувати з нами?</h3>
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+
+    <section class="about-sec parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef1">
+
+                        </div>
+                        <p class="text-center align-middle">Ми даруємо емоції</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef2">
+
+                        </div>
+                        <p class="text-center align-middle">Ваша безпека пріорітет №1</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef3">
+
+                        </div>
+                        <p class="text-center align-middle">Ви завжди для нас друг, а не тільки клієнт </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef4">
+
+                        </div>
+                        <p class="text-center align-middle">Всі маршрути перед виходом досліджені та прокладені</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef5">
+
+                        </div>
+                        <p class="text-center align-middle">З нами завжди цікаво і з нами кінь</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef6">
+
+                        </div>
+                        <p class="text-center align-middle">Ваш раціон завжди смачний та поживний </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef7">
+
+                        </div>
+                        <p class="text-center align-middle">Ми вміємо надавати першу медичну допомогу</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef8">
+
+                        </div>
+                        <p class="text-center align-middle">Ми не ходтмо в гори, ми граємо в гру</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits_wrap">
+                        <div class="img_benef img_benef9">
+
+                        </div>
+                        <p class="text-center align-middle">Ми завжди вам допоможемо підкорити вершину </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section class="team-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="head-box text-center mb-5 col-md-12">
+                    <h2 class="h2_style">Наша команда</h2>
+                    <h6 class="text-underline-primary mb-5">Інформація про нас</h6>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-sm-4">
+                    <div class="member-box anim-lf t-bottom">
+                        <img class="img-fluid" src="./img/img/grakin.jpg" alt="">
+                        <div class="overlay-content">
+                            <h3 class="text-white ml-3 my-0">Андрій Дуда</h3>
+                            <p class="text-white ml-3 mb-3">Менеджер</p>
+                            <span class="socail-l ml-3 mb-3">
+			           <div class="a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow">
+    <a class="a2a_button_facebook" data-a2a-follow="andriy.chess"></a>
+</div>
+			          </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-sm-4">
+                    <div class="member-box anim-lf t-bottom">
+                        <img class="img-fluid" src="./img/img/grakin.jpg" alt="">
+                        <div class="overlay-content">
+                            <h3 class="text-white ml-3 my-0">Любомир Андрейків</h3>
+                            <p class="text-white ml-3 mb-3">Провідник</p>
+                            <span class="socail-l ml-3 mb-3">
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow">    
+			            <a class="a2a_button_facebook" data-a2a-follow="lubko.andreikiv"></a>
+                        </div>
+			          </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-sm-4">
+                    <div class="member-box anim-lf t-bottom">
+                        <img class="img-fluid" src="./img/img/grakin.jpg" alt="">
+                        <div class="overlay-content">
+                            <h3 class="text-white ml-3 my-0">Craig Thompson</h3>
+                            <p class="text-white ml-3 mb-3">Кервник групи</p>
+                            <span class="socail-l ml-3 mb-3">
+			            <a href="#" class="mr-2"><i class="fa fa-facebook box-circle-solid"></i></a>
+						<a href="#" class="mr-2"><i class="fa fa-twitter box-circle-solid"></i></a>
+						<a href="#"><i class="fa fa-dribbble box-circle-solid"></i></a>
+			          </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+
+
+    <!-- ### start of the gallery definition ### -->
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="heading text-md-center text-xs-center">
+                        <h2 class="h2_style">
+                            <small>Наша історія в картинках</small>
+                            <br> Фото наших походів</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nanogallery2" data-nanogallery2='{
+                        "thumbnailHeight":  235,
+                        "thumbnailWidth":   450,
+                        "thumbnailGutterWidth": 20,
+                        "thumbnailGutterHeight": 20,
+                        "thumbnailDisplayTransition":"fadeIn",
+                        "thumbnailHoverEffect2": "imageScale150Outside|scale120",
+                        "thumbnailBorderHorizontal":0,
+                        "thumbnailBorderVertical":0,
+                        "breadcrumbAutoHideTopLevel": false,
+                        "itemsBaseURL":     "./img/img/"
+                      }'>
+
+                <a href="./img/img/" data-ngkind="album" data-ngid="1" data-ngthumb="gra18.jpg">Фото з Мармарос</a>
+                <a href="gra18.jpg" data-ngid="10" data-ngalbumid="1" data-ngthumb="gra18.jpg">Ми на горі</a>
+                <a href="gra20.jpg" data-ngid="11" data-ngalbumid="1" data-ngthumb="gra20.jpg">Ми піднімаємося</a>
+
+                <!-- SECOND ALBUM -->
+                <a href="https://lh3.googleusercontent.com/EcLuVB88nsb4a-fIQo6dP-JaSz5ZgVeZ70GKHVeOhk3IjvFvvIsLmUNo5636qfmW-MQkWqb7mhHGBZZ5RpM3RT4p8EsF2f3ZM6RwyLIQI_YBfD6aP8OiAvlsTMuAJ4ukDNljrnSgyF1rLaHB8PfT3zbjsCGUPG-sBcdVLVJWX-ghBQkWkFCCcaClPHCT9LkCSWQ-X0rdZ_bW-N7UMzKx98XKeMVVCrLeOb1C9x4PDH3di-GhV5raHN5U9MfsePNboR3e8uasaW1xoCf4UcUhWCx8QwmhoETje4vNYtK-tI0dIx4bWDYcZbcKrrDGmIMtWn5MUpuhD8E51N5rH6GDjogsFgDy5MfAHwCmjhO0JkB-HcmIn9ORI-VBdDf8FLwqTRTG5Toqh8yfbIuFvilldh_ZZJRd_5mEUSVO3Avcj3jLZrDJtN3wvL-jgyqySY2lgTGmlcfPqkdM_kcxxBWroydRxM-dFg03x8pEB6KNiKEhsoCQkBoPoEb9ruRZCR4hTvBl4btb0wgqr8d7Jg3ahG0_Ufg74MPNY57VlOvB8N4u-7e4jyQjY4R65qdrqHZG9CxZAJzIOFiV3NchMzgr6BnlYrvBJuG59utwWq4dnKU1eM7r3vDwI-n_40JSEIhkPbRW2eNUK-KV4F_0hdO0moTz7IbsoCPg98ALdvC1RILGnJOf-Q33AeAFHVD0Wz_0_qMFOB10feqL5U0KSYBPyS7Q=w1265-h843" data-ngkind="album" data-ngid="2" data-ngthumb="gra6.jpg">Фото з Говерли</a>
+                <a href="https://lh3.googleusercontent.com/HqVxmRRkK7PArdv6nuIelsr9MFyzDq3FKrn4I1SUbvrcUEH787JBP004R8Gqi3O58rfiCNueCOl8vyiY1I3SjmbtMMAOpJdZ53tusCLGZJ8ExzsIpq844FbqakYzqPk4wxw_KDXvrQ=w2400"
+                    data-ngid="20" data-ngalbumid="2" data-ngthumb="gra6.jpg">Ми на горі 1</a>
+                <a href="https://lh3.googleusercontent.com/EcLuVB88nsb4a-fIQo6dP-JaSz5ZgVeZ70GKHVeOhk3IjvFvvIsLmUNo5636qfmW-MQkWqb7mhHGBZZ5RpM3RT4p8EsF2f3ZM6RwyLIQI_YBfD6aP8OiAvlsTMuAJ4ukDNljrnSgyF1rLaHB8PfT3zbjsCGUPG-sBcdVLVJWX-ghBQkWkFCCcaClPHCT9LkCSWQ-X0rdZ_bW-N7UMzKx98XKeMVVCrLeOb1C9x4PDH3di-GhV5raHN5U9MfsePNboR3e8uasaW1xoCf4UcUhWCx8QwmhoETje4vNYtK-tI0dIx4bWDYcZbcKrrDGmIMtWn5MUpuhD8E51N5rH6GDjogsFgDy5MfAHwCmjhO0JkB-HcmIn9ORI-VBdDf8FLwqTRTG5Toqh8yfbIuFvilldh_ZZJRd_5mEUSVO3Avcj3jLZrDJtN3wvL-jgyqySY2lgTGmlcfPqkdM_kcxxBWroydRxM-dFg03x8pEB6KNiKEhsoCQkBoPoEb9ruRZCR4hTvBl4btb0wgqr8d7Jg3ahG0_Ufg74MPNY57VlOvB8N4u-7e4jyQjY4R65qdrqHZG9CxZAJzIOFiV3NchMzgr6BnlYrvBJuG59utwWq4dnKU1eM7r3vDwI-n_40JSEIhkPbRW2eNUK-KV4F_0hdO0moTz7IbsoCPg98ALdvC1RILGnJOf-Q33AeAFHVD0Wz_0_qMFOB10feqL5U0KSYBPyS7Q=w1265-h843-nog" data-ngid="21" data-ngalbumid="2" data-ngthumb="gra8.jpg">Ми на горі</a>
+                <a href="gra9.jpg" data-ngid="22" data-ngalbumid="2" data-ngthumb="gra9.jpg">Ми на горі</a>
+                <a href="gra6.jpg" data-ngid="23" data-ngalbumid="2" data-ngthumb="gra6.jpg">Ми на горі</a>
+                <a href="gra8.jpg" data-ngid="24" data-ngalbumid="2" data-ngthumb="gra8.jpg">Ми на горі</a>
+                <a href="gra9.jpg" data-ngid="25" data-ngalbumid="2" data-ngthumb="gra9.jpg">Ми на горі</a>
+                <!-- SERD ALBUM -->
+                <a href="./img/img/" data-ngkind="album" data-ngid="3" data-ngthumb="gra15.jpg">Говерла</a>
+                <a href="gra15.jpg" data-ngid="30" data-ngalbumid="3" data-ngthumb="gra15.jpg">Ми на горі</a>
+                <a href="gra12.jpg" data-ngid="31" data-ngalbumid="3" data-ngthumb="gra12.jpg">Ми на горі</a>
+                <a href="gra11.jpg" data-ngid="32" data-ngalbumid="3" data-ngthumb="gra11.jpg">Ми на горі</a>
+                <!-- FORTH ALBUM -->
+                <a href="./img/img/" data-ngkind="album" data-ngid="4" data-ngthumb="gra7.jpg">Говерла</a>
+                <a href="gra7.jpg" data-ngid="40" data-ngalbumid="4" data-ngthumb="gra7.jpg">Ми на горі</a>
+                <a href="gra6.jpg" data-ngid="41" data-ngalbumid="4" data-ngthumb="gra6.jpg">Ми на горі</a>
+                <a href="gra8.jpg" data-ngid="42" data-ngalbumid="4" data-ngthumb="gra8.jpg">Ми на горі</a>
+                <!-- FIFTH ALBUM -->
+                <a href="./img/img/" data-ngkind="album" data-ngid="5" data-ngthumb="gra5.jpg">Говерла</a>
+                <a href="gra5.jpg" data-ngid="50" data-ngalbumid="5" data-ngthumb="gra5.jpg">Ми на горі</a>
+                <a href="gra6.jpg" data-ngid="51" data-ngalbumid="5" data-ngthumb="gra6.jpg">Ми на горі</a>
+                <a href="gra8.jpg" data-ngid="52" data-ngalbumid="5" data-ngthumb="gra8.jpg">Ми на горі</a>
+                <!-- FIFTH ALBUM -->
+                <a href="./img/img/" data-ngkind="album" data-ngid="6" data-ngthumb="gra6.jpg">Говерла</a>
+                <a href="gra5.jpg" data-ngid="60" data-ngalbumid="6" data-ngthumb="gra5.jpg">Ми на горі</a>
+                <a href="gra6.jpg" data-ngid="61" data-ngalbumid="6" data-ngthumb="gra6.jpg">Ми на горі</a>
+                <a href="gra8.jpg" data-ngid="62" data-ngalbumid="6" data-ngthumb="gra8.jpg">Ми на горі</a>
+            </div>
+            <!-- ### end of the gallery definition ### -->
+        </div>
+    </section>
+
+
+
+
+    <!------------ Contact section ------------>
+    <section id="contact-sec" class=" content">
+        <!-- <div class="overlay"></div> -->
+        <form name="submit-to-google-sheet" class="container form-block">
+            <div class="row">
+                <!--                <form method="post" action="./backend/form_data.php"></form>-->
+                <div class="col-lg-12 text-center">
+                    <h2>Ввести дані для поїздки</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <span class="input input-hoshi">
+                        <input class="input_field input_field-hoshi" type="text" name="name" id="input-4" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                            <span class="input_label-content input_label-content-hoshi">ПІБ учасника</span>
+                        </label>
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <span class="input input-hoshi">
+                        <input name="phone" class="input_field input_field-hoshi" type="text" id="phone" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="phone">
+                            <span class="input_label-content input_label-content-hoshi">Телефон</span>
+                        </label>
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <span class="input input-hoshi">
+                        <input name="email" class="input_field input_field-hoshi" type="email" id="input-4" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                            <span class="input_label-content input_label-content-hoshi">Email</span>
+                        </label>
+                    </span>
+                </div>
+                <!-- <div class="overlay"></div> -->
+                <div class="container form-block">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <span class="input input-hoshi">
+                                <input name="birthDate" class=" datepicker-here input_field input_field-hoshi" data-startDate="1990-01-01" type="text" id="input-4"
+                                />
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                    <span class="input_label-content input_label-content-hoshi">Дата народження</span>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <span class="input input-hoshi">
+                                <!--					<input class="input_field input_field-hoshi" type="text" id="input-4" />-->
+                                <select id="select-trip" name="trip" class="input_field input_field-hoshi"></select>
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                    <span class="input_label-content input_label-content-hoshi">Вибрати мандрівку</span>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <span class="input input-hoshi">
+                                <input name="description" class="input_field input_field-hoshi" type="text" id="input-4" />
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                    <span class="input_label-content input_label-content-hoshi">Чому йдете з нами</span>
+                                </label>
+                            </span>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-outline-secondary btn-lg mybtnclass ">зареєструватись</button>
+                        </div>
+
+
+
+                        <!--
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <span class="t-area input-hoshi">
+                <textarea class="input_field input_field-hoshi" rows="1"></textarea>
+						<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+						<span class="input_label-content input_label-content-hoshi">Email</span>
+                    </label>
+                    </span>
+                    <a href="#" class="btn btn-capsul btn-transparent-white">Submit</a>
+                </div>
+-->
+
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+    <div class='message'>
+        <div class='check'>
+            &#10004;
+        </div>
+        <p>
+            Вітаємо!
+        </p>
+        <p>
+            Ви зареєстровані. Підтвердження реєстрації буде надіслано на вашу пошту.
+        </p>
+        <button id='ok'>
+            OK
+        </button>
+    </div>
+
+
+
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <!--
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"> <img src="img/img/logo_black.png">  </a></h2>
+                </div>
+-->
+
+                <div class="col-sm-4">
+
+                    <ul>
+                        <li>
+                            <a href="#">Мандрівки</a>
+                        </li>
+                        <li>
+                            <a href="#">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Наша команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Наші переваги</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <!--                    <h5>Support</h5>-->
+                    <ul class="contact_li">
+                        <li>
+                            <a href="#">graruh@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#">m.me/gra.ruh</a>
+                        </li>
+                        <li>
+                            <a href="#">телефон/viber +380938440478</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-networks">
+                        <!-- AddToAny BEGIN -->
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_email"></a>
+                            <a class="a2a_button_viber"></a>
+                        </div>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <!-- AddToAny END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright Text </p>
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <!--    <div id="myModal" class="modal">-->
+
+    <!-- Modal content -->
+    <!--
+        <div class="modal-content ">
+            <span class="close">&times;</span>
+            <iframe height='1113' allowTransparency='true' frameborder='0' scrolling='yes' style='width:1200px;border:none' src='//www.formget.com/app/forms/view/LNI6-289890/i?w=328'>Your Contact </iframe>
+        </div>
+-->
+
+    <!--    </div>-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--        <script src="js/jquery.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+
+    <!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <script src="js/scrollPosStyler.js"></script>
+    <!--
+    <script src="js/swiper.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+-->
+    <!--    <script src="js/nivo-lightbox.min.js"></script>-->
+    <script src="js/wow.min.js"></script>
+    <script defer src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/core.js"></script>
+    <script src="components/slick-slider/slick.min.js"></script>
+    <script src="components/slick-slider/my-slick-slider.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <!--    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a99614b23bdcb55"></script>-->
+
+
+</body>
+
+</html>

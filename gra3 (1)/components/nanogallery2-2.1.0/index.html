@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- jQuery -->
+<script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./dist/css/nanogallery2.min.css">
+<script src="dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+    <body>
+  <div id="nanogallery2" data-nanogallery2>
+    <a  href="http://graruh.zzz.com.ua/img/img/gra17.jpg" data-ngThumb="http://graruh.zzz.com.ua/img/img/gra17.jpg"> photo 1 </a>
+    <a href="http://graruh.zzz.com.ua/img/img/gra16.jpg" data-ngThumb="http://graruh.zzz.com.ua/img/img/gra16.jpg"> photo 2 </a>
+    <a href="..../img3.jpg" data-ngThumb="..../thumbnail3.jpg"> Title photo 3 </a>
+  </div>
+  <script>
+   jQuery(document).ready(function () {
+      jQuery("#nanogallery2").nanogallery2({
+        thumbnailHeight:  600,
+        thumbnailWidth:   600,
+        itemsBaseURL:     'http://graruh.zzz.com.ua/img/img/',
+        items: [
+            { src: 'gra17.jpg', srct: 'gra17.jpg', title: 'gra17' },
+            { src: 'gra16.jpg', srct: 'gra16.jpg', title: 'gra16' },
+            { src: 'berlin3.jpg', srct: 'berlin3_t.jpg', title: 'Berlin 3' }
+          ]
+      });
+    });
+  </script>
+</body>
+</body>
+</html>
