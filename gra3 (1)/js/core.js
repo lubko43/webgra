@@ -13,6 +13,7 @@ $(document).ready(function () {
     generateHeaderSlider();
     phoneMask();
     datepickerConfig();
+    deleteGalleriesButton();
 });
 /*------- Smooth Scroll -------*/
 
@@ -67,6 +68,7 @@ function goToFrom(tripName) {
     $('html, body').animate({
         scrollTop: ($('#contact-sec').offset().top)
     }, 500);
+    $("#input-4").focus();
 }
 
 function generateHeaderSlider() {
@@ -78,7 +80,7 @@ function generateHeaderSlider() {
             '<h2>' + trip.name + '</h2>' +
             '<h4>' + trip.price + ' ' + trip.currency + '</h4>' +
             '<a href="#contact-sec">' +
-            '<button type="button" class="btn btn-outline-secondary btn-lg mybtnclass register-btn"> зареєструватись</button>' +
+            '<button type="button" onclick=goToFrom(' + trip.id + ') class="btn mg-0 width-100 btn-outline-secondary btn-lg register-btn"> зареєструватись</button>' +
             '</a>' +
             '</div>' +
             '</div>';
@@ -98,8 +100,9 @@ function generateTripSection() {
             '<div class="halfdiv">' +
             '  <h4 class="text-center trip-name">' + trip.name + '</h4>' +
             '<ul><li class="trip-dates">' + trip.startDate + '-' + trip.endDate + '</li>' +
-            '<li class="trip-price">' + trip.price + '</li>' +
-            '<li>Залишилось місць' + trip.groupEmount + '</li>' +
+            '<li class="trip-price">' + trip.price + ' ' + trip.currency + '</li>' +
+            '<li>Розмір групи ' + trip.groupEmount + '</li>' +
+            '<li>Складність ' + trip.difficulty + '</li>' +
             '</ul>' +
             '<div class="text-center">' +
             '<a class="trip-link" href="./trip_ditale.html"><button type="button" class="btn btn-outline-secondary btn-sm mybtnclass">детальніше</button></a>' +
@@ -180,6 +183,13 @@ function datepickerConfig() {
     $('.datepicker-here').datepicker({
         startDate: new Date(1990, 1, 1)
     })
+}
+
+function deleteGalleriesButton() {
+     var navMain = $("#navbarCollapse1");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
 }
 
 function showSuccessMessage(nr) {
