@@ -11,9 +11,11 @@ $(document).ready(function () {
     generateForm();
     generateTripSection();
     generateHeaderSlider();
+    generateGallery();
     phoneMask();
     datepickerConfig();
     deleteGalleriesButton();
+    showMoreLess();
 });
 /*------- Smooth Scroll -------*/
 
@@ -77,7 +79,7 @@ function generateHeaderSlider() {
             '<div class="slider_img slider_img' + (index + 1) + '"' +
             ' style="background-image:url(' + "'" + trip.backgroungUrl + "'" + ')">' +
             '<p>' + trip.startDate + '-' + trip.endDate + ' (' + trip.duration + ' ' + _getDurationLabel(trip.duration) + ')</p>' +
-            '<h2>' + trip.name + '</h2>' +
+            '<h2 class="bold-text">' + trip.name + '</h2>' +
             '<h4>' + trip.price + ' ' + trip.currency + '</h4>' +
             '<a href="#contact-sec">' +
             '<button type="button" onclick=goToFrom(' + trip.id + ') class="btn mg-0 width-100 btn-outline-secondary btn-lg register-btn"> зареєструватись</button>' +
@@ -99,10 +101,10 @@ function generateTripSection() {
             '<div class="halfinvis"></div>' +
             '<div class="halfdiv">' +
             '  <h4 class="text-center trip-name">' + trip.name + '</h4>' +
-            '<ul><li class="trip-dates">' + trip.startDate + '-' + trip.endDate + '</li>' +
-            '<li class="trip-price">' + trip.price + ' ' + trip.currency + '</li>' +
-            '<li>Розмір групи ' + trip.groupEmount + '</li>' +
-            '<li>Складність ' + trip.difficulty + '</li>' +
+            '<ul><li class="trip-dates"><i></i>' + trip.startDate + '-' + trip.endDate + '</li>' +
+            '<li class="trip-price"><i></i>' + trip.price + ' ' + trip.currency + '</li>' +
+            '<li class="trip-quantity"><i></i>Розмір групи ' + trip.groupEmount + '</li>' +
+            '<li class="trip-difficulty"><i></i>Складність ' + trip.difficulty + '</li>' +
             '</ul>' +
             '<div class="text-center">' +
             '<a class="trip-link" href="./trip_ditale.html"><button type="button" class="btn btn-outline-secondary btn-sm mybtnclass">детальніше</button></a>' +
@@ -196,4 +198,66 @@ function showSuccessMessage(nr) {
     $('.message').toggleClass('comein');
     $('.check').toggleClass('scaledown');
     $('#go').fadeToggle(nr);
+}
+
+function generateGallery () {
+    $("#nanogallery2").nanogallery2({
+            thumbnailHeight:  235,
+            thumbnailWidth:   450,
+            thumbnailGutterWidth: 20,
+            thumbnailGutterHeight: 20,
+            thumbnailDisplayTransition:"fadeIn",
+            thumbnailHoverEffect2: "imageScale150Outside|scale120",
+            thumbnailBorderHorizontal:0,
+            thumbnailBorderVertical:0,
+            breadcrumbAutoHideTopLevel: true,
+            itemsBaseURL:     "./gallery/1/",
+            items: [
+            {
+                src:          '1.jpg',    // image url
+                srct:         '1.jpg',  // thumbnail url
+                title:        'Title Image1',    // media title
+                description:  'Description1'     // media description
+            },
+            { src: '2.jpg', srct: '2.jpg',  title: 'Title Image2' },
+            { src: '3.jpg', srct: '3.jpg', title: 'Title Image3' }
+            ]
+      });
+}
+
+function showMoreLess() {
+        // Configure/customize these variables.
+        var showChar = 300;  // How many characters are shown by default
+        var ellipsestext = "...";
+        var moretext = " Більше >";
+        var lesstext = "Сховати ";
+        
+    
+        $('.more').each(function() {
+            var content = $(this).html();
+     
+            if(content.length > showChar) {
+     
+                var c = content.substr(0, showChar);
+                var h = content.substr(showChar, content.length - showChar);
+     
+                var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+     
+                $(this).html(html);
+            }
+     
+        });
+     
+        $(".morelink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+        });
 }

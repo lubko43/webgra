@@ -8,8 +8,10 @@ var tours = [
         duration: 5,
         difficulty: 'середня',
         price: "3000",
+        allPrices: ["2000","2500","3000"],
+        allDates: ["12.09.2019","30.09.2019","06.10.2019"],
         currency: "грн",
-        groupEmount: "5-16",
+        groupEmount: "5",
         shortDescription: "Some description",
         backgroungUrl: "https://lh6.googleusercontent.com/NXbwJcysamTGGpRbPig8UVr_IfexN5W3fDcQHr7oXEfr8zrCxOthi_xmPFg=w2400"
     },
@@ -77,5 +79,18 @@ var tours = [
         groupEmount: "10-15",
         shortDescription: "La lallal allall alll la",
         backgroungUrl: "https://lh6.googleusercontent.com/ORZVSSWIUl77AKT6ZqvwgOzYGDFSRnDICVyuelge2zP7RZDAHZanfC1D9r0=w2400"
+    },
+    {
+        id:7,
+        name: "Parashka",
+        startDate: "30.05.19",
+        endDate: "15.06.19",
+        duration: 14,
+        difficulty: 'легка',
+        price: "900",
+        currency: "грн",
+        groupEmount: "10-13",
+        shortDescription: "Херня",
+        backgroungUrl: "./img/img/backgroungTrip.jpg"
     },
 ];
