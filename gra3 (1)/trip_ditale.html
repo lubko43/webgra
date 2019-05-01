@@ -10,7 +10,8 @@
     <meta name="author" content="">
     <link rel="icon" href=" ">
     <title>GRA</title>
-
+    <!-- Datepicker in form -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
@@ -31,6 +32,8 @@
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <!-- nanogallery2 -->
     <link href="https://unpkg.com/nanogallery2@2.1.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.1.0/dist/jquery.nanogallery2.min.js"></script>
 
 </head>
@@ -48,25 +51,36 @@
         </button>
                     <a class="navbar-brand" href="#">
         <img src="./img/img/logo_black.png" style="width: 50px;"></a>
-                    <div class="collapse navbar-collapse" id="navbarCollapse1">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"> <a class="nav-link" href="./index.html#myCarousel">Головна <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="./index.html#features">Мандрівки</a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="./index.html#about">Чому ми</a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="./index.html#myFooter">Контакти</a> </li>
-                            
-                        </ul>
-                                
-                            
-                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style ">
-                                <a class="a2a_button_facebook nav-link"></a>
-                                <a class="a2a_button_email nav-link"></a>
-                                <a class="a2a_button_viber nav-link"></a>
-                            </div>
-                        
-                            <script async src="https://static.addtoany.com/menu/page.js"></script>
-                        
+                   <div class="collapse navbar-collapse" id="navbarCollapse1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active" >
+                            <a class="nav-link" href="index.html#myCarousel">Головна
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"   href="index.html#features">Мандрівки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="index.html#about">Чому ми</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#myFooter">Контакти</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="align-center flex a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow">
+                        <a class="ico a2a_button_facebook facebook-ico nav-link" data-a2a-follow="gra.ruh"></a>
+                        <a class="ico mail-ico nav-link" type="mailto" href="mailto:gra.ruh@gmail.com"></a>
+                        <a class="a2a_button_instagram ico instagram-ico nav-link" data-a2a-follow="gra.travel"></a>
+                        <a class="ico viber-ico nav-link" href="tel:+380634221451"></a>
                     </div>
+
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+                </div>
+
                     
                             
                         
@@ -74,61 +88,46 @@
             </div>
         </div>
         
-    <section class="about-sec trip-detail" id="about">
-                            <div class="header_trip_img"
+    <section class=" trip-detail" id="header">
+           <!--  <div class="slider_img header_trip_img"
                                 style="background-image:url('./gallery/1/1.jpg')">
-                            <h2 class="bold-text">MArmarosy</h2>
-                            <h4> Price</h4>
-                            <p>12.32.4333-32.43.1990</p>
-                            <a href="#contact-sec"></a>
+                <h2 class="bold-text">MArmarosy</h2>
+                <h4> Price</h4>
+                <p>12.32.4333-32.43.1990</p>
+                <a href="#contact-sec"></a>
                 <h3 class="h2_style h2_color">Деталі подорожі</h3>
-                <!-- <p>Мандрівка розпочнеться в ніч на суботу 14 жовтня о 00:10 зі Львова.<br> Місце зустрічі буде повідомлятися після реєстрації та оплати.<br> Повертаємося до Львова у понеділок 16 жовтня до 21.00 </p> -->
+            </div> -->
 
-            </div>
-
+    </section>
+    <section class="short-info">
+        <div class="container">
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li id="trip-length"><i class="fas fa-route" style="padding-right: 15px"></i></li>
+              <li id="trip-start-finish"><i class="fas fa-hiking" style="padding-right: 15px"></i></li>
+              <li id="trip-dates"><i class="fas fa-calendar-alt" style="padding-right: 15px"></i></li>
+              <li id="trip-duration"><i class="fas fa-hourglass-half" style="padding-right: 15px"></i></li>
+              <li id="trip-restriction"><i class="fas fa-user" style="padding-right: 15px"></i></li> 
+              <li id="trip-aditional-info"><i class="fas fa-radiation" style="padding-right: 15px"></i></li>
+              <li  id="showmenu" style="cursor: pointer;"><i class="fas fa-campground" style="padding-right: 15px"></i>Спорядження <i class="fas fa-sort-down" style="padding-right: 15px"></i></li>
+                <div class="menu" style="display: none;">
+                    <ul id="gear-list" style="list-style-type: square;">
+                    </ul>
+                </div>
+            </ul>
+        </div>     
     </section>
     <section>
         <div class="container">
-            <h3 class="h2_style">Вартість мандрівки 1400грн туди входить:</h3>
-            <div class="row include_wrap">
-                <div class="first_div col-md-6 col-sm-12">
-                    <ul>
-                        <li>
-                            <p>Добирання в дві сторони приватним автобусом</p>
-                        </li>
-                        <li>
-                            <p>Харчування протягом мандрівки</p>
-                        </li>
-                        <li>
-                            <p>Страхуванн</p>
-                        </li>
-                        <li>
-                            <p>Гірська гра</p>
-                        </li>
-                        <li>
-                            <p>Послуги провідників</p>
-                        </li>
+             <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                <h3 class="h2_style">У вартість мандрівки входить:</h3>
+                    <ul id="includedInPrice" style="list-style-type: none; padding-left: 0;">
                     </ul>
-                </div>
-                <div class="secound_div col-md-6 col-sm-12">
-                    <ul>
-                        <li>
-                            <p>Групова аптечка</p>
-                        </li>
-                        <li>
-                            <p>Вхід у заповідник</p>
-                        </li>
-                        <li>
-                            <p>Музичний супровід(сопілка/гітара)</p>
-                        </li>
-                        <li>
-                            <p>Прокат наметів</p>
-                        </li>
-                        <li>
-                            <p>Спорядження(калани, пальники,балони)</p>
-                        </li>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+            <h3 class="h2_style">У вартість мандрівки не входить:</h3>
+                    <ul id="notIncludedInPrice" style="list-style-type: none; padding-left: 0;">
                     </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -138,71 +137,10 @@
     <section>
         <div class="container">
             <h4 class="h2_style">Програма</h4>
-            <div class="day-wrapper">
-                <h2>День 1</h2>
-                <p class="day-details">* 3:00 збираємось у Львові та вирушаємо до с. Ділове; 
-                        * відмічаємося в прикордонній службі України, добре снідаємо та виходимо на маршрут;
-                        * йдемо до Ялинського водоспаду, дорогою робимо перекус; 
-                        * піднімаємося на полонину Лисичу та доходимо до місця нашого кемпінгу, де розкладемо намети;
-                        * відпочиваємо, розводимо ватру, бавимося в ігри та готуємо смачну вечерю; 
-                        * ночуємо в наметах. </p>
-                <img src="./gallery/1/1.jpg" class="img-day"/>
-            </div>
-            <div class="day-wrapper">
-                    <h2>День 2</h2>
-                    <p class="day-details">* прокидаємося бадьорими та задоволеними, смачно та ситно снідаємо;
-                            * складаємо всі свої речі в намети та вирушаємо в радіальний маршрут; 
-                            * починаємо підйом на гору Піп Іван 1938м, дорогою робимо круті фотки та милуємося краєвидами;
-                            * ми на вершині круті та задоволені, фоткаємося, милуємося краєвидами та робимо перекус-обід; 
-                            * спускаємося до нашого табору; 
-                            * відпочиваємо та милуємося квітами рододендрону; 
-                            * готуємо смачну вечерю та готуємося до сну; 
-                            * ночуємо в наметах. 
-                             </p>
-                    <img src="./gallery/1/2.jpg" class="img-day"/>
-                </div>
-                <div class="day-wrapper">
-                        <h2>День 3</h2>
-                        <p class="day-details">* прокидаємося бадьорими та задоволеними, смачно та ситно снідаємо; 
-                                * збираємо свої речі та складаємо намети; 
-                                * спускаємося в с. Ділове;
-                                * їдемо у Львів, дорогою заїдемо в кафе щоб пообідати; 
-                                * прибуваємо у Львів близько 23:00.
-                                УВАГА! Організатори залишають за собою право вносити зміни у програму з огляду на погоду, час проходження маршруту чи інші обставини.
-                            </p>
-                        <img src="./gallery/1/3.jpg" class="img-day"/>
-                    </div>
-                <div class="day-wrapper">
-                        <h2>День 4</h2>
-                        <p class="day-details">* прокидаємося бадьорими та задоволеними, смачно та ситно снідаємо; 
-                                * збираємо свої речі та складаємо намети; 
-                                * спускаємося в с. Ділове;
-                                * їдемо у Львів, дорогою заїдемо в кафе щоб пообідати; 
-                                * прибуваємо у Львів близько 23:00.
-                                УВАГА! Організатори залишають за собою право вносити зміни у програму з огляду на погоду, час проходження маршруту чи інші обставини.
-                            </p>
-                        <img src="./gallery/1/3.jpg" class="img-day"/>
-                    </div>
-                <div class="day-wrapper">
-                        <h2>День 5</h2>
-                        <p class="day-details">* прокидаємося бадьорими та задоволеними, смачно та ситно снідаємо; 
-                                * збираємо свої речі та складаємо намети; 
-                                * спускаємося в с. Ділове;
-                                * їдемо у Львів, дорогою заїдемо в кафе щоб пообідати; 
-                                * прибуваємо у Львів близько 23:00.
-                                УВАГА! Організатори залишають за собою право вносити зміни у програму з огляду на погоду, час проходження маршруту чи інші обставини.
-                            </p>
-                        <img src="./gallery/1/3.jpg" class="img-day"/>
-                    </div>
+            <div id="daysInfo"></div>
             <h4 class="rout_title h2_style">Маршрут</h4>
             <div class="routlist">
-                <ul>
-                    <li><p>с. Ділове</p></li>
-                    <li><p>хр.Білий</p></li>
-                    <li><p>пол.Лисича</p></li>
-                    <li><p>Піп Іван</p></li>
-                    <li><p>г.Щербань</p></li>
-                    <li><p>с.Ділове</p></li>
+                <ul id="routePoints">
                 </ul>
                 <div class="rout_line"></div>
             </div>
@@ -229,86 +167,81 @@
 
 
 
-    <!------------ Contact section ------------>
-    <section id="contact-sec" class=" content">
-        <div class="overlay"></div>
-        <form method="post" action="..\backend\form_data.php" class="container form-block">
+ <section id="contact-sec" class=" content">
+        <!-- <div class="overlay"></div> -->
+        <form name="submit-to-google-sheet" class="container form-block">
             <div class="row">
-<!--                <form method="post" action="./backend/form_data.php"></form>-->
+                <!--                <form method="post" action="./backend/form_data.php"></form>-->
                 <div class="col-lg-12 text-center">
                     <h2>Ввести дані для поїздки</h2>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" name="Surname" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">ПІБ учасника</span>
-                    </label>
+                        <input class="input_field input_field-hoshi" type="text" name="name" id="input-4" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                            <span class="input_label-content input_label-content-hoshi">ПІБ учасника</span>
+                        </label>
                     </span>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Телефон</span>
-                    </label>
+                        <input name="phone" class="input_field input_field-hoshi" type="text" id="phone" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="phone">
+                            <span class="input_label-content input_label-content-hoshi">Телефон</span>
+                        </label>
                     </span>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Email</span>
-                    </label>
+                        <input name="email" class="input_field input_field-hoshi" type="email" id="input-4" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                            <span class="input_label-content input_label-content-hoshi">Email</span>
+                        </label>
                     </span>
                 </div>
-                <div class="overlay"></div>
+                <!-- <div class="overlay"></div> -->
                 <div class="container form-block">
                     <div class="row">
 
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Дата народження</span>
-                            </label>
+                                <input name="birthDate" class=" datepicker-here input_field input_field-hoshi" data-startDate="1990-01-01" type="text" id="input-4"
+                                />
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                    <span class="input_label-content input_label-content-hoshi">Дата народження</span>
+                                </label>
                             </span>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <span class="input input-hoshi">
-<!--					<input class="input_field input_field-hoshi" type="text" id="input-4" />-->
-					 <select name="cars" class="input_field input_field-hoshi">
-    <option value="marmarosy">Мармароси</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Вибрати мандрівку</span>
-                            </label>
+                                <!--                    <input class="input_field input_field-hoshi" type="text" id="input-4" />-->
+                                <select id="select-trip" name="trip" class="input_field input_field-hoshi"></select>
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                    <span class="input_label-content input_label-content-hoshi">Вибрати мандрівку</span>
+                                </label>
                             </span>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <span class="input input-hoshi">
-					<input class="input_field input_field-hoshi" type="text" id="input-4" />
-					<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Чому йдете з нами</span>
-                            </label>
+                                <input name="description" class="input_field input_field-hoshi" type="text" id="input-4" />
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                    <span class="input_label-content input_label-content-hoshi">Чому йдете з нами</span>
+                                </label>
                             </span>
                         </div>
-                        
-                        <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-outline-secondary btn-lg mybtnclass ">зареєструватись</button>
+
+                        <div class="col-md-12 text-center register-container">
+                            <button type="submit" class="btn mg-0 btn-outline-secondary btn-lg">зареєструватись</button>
                         </div>
-                        
-                        
-                        
+
+
+
                         <!--
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                     <span class="t-area input-hoshi">
                 <textarea class="input_field input_field-hoshi" rows="1"></textarea>
-						<label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
-						<span class="input_label-content input_label-content-hoshi">Email</span>
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                        <span class="input_label-content input_label-content-hoshi">Email</span>
                     </label>
                     </span>
                     <a href="#" class="btn btn-capsul btn-transparent-white">Submit</a>
@@ -316,13 +249,27 @@
 -->
 
                     </div>
-                    
+
                 </div>
             </div>
-            
+
         </form>
-        
+
     </section>
+    <div class='message'>
+        <div class='check'>
+            &#10004;
+        </div>
+        <p>
+            Вітаємо!
+        </p>
+        <p>
+            <span id="clientName"></span>, Ви зареєстровані на мандривку в <span id="clientTrip"></span>. Підтвердження реєстрації буде надіслано на вашу пошту.
+        </p>
+        <button id='ok'>
+            OK
+        </button>
+    </div>
 
 
 
@@ -335,39 +282,51 @@
                 </div>
 -->
 
-                <div class="col-sm-4">
+                <div class="col-sm-6">
 
                     <ul>
-                        <li><a href="#">Мандрівки</a></li>
-                        <li><a href="#">Про нас</a></li>
-                        <li><a href="#">Наша команда</a></li>
-                        <li><a href="#">Наші переваги</a></li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i>Мандрівки</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-angle-right"></i>Про нас</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-angle-right"></i>Наша команда</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i>Наші переваги</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <!--                    <h5>Support</h5>-->
-                    <ul class="contact_li">
-                        <li><a href="#">graruh@gmail.com</a></li>
-                        <li><a href="#">m.me/gra.ruh</a></li>
-                        <li><a href="#">телефон/viber +380938440478</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <div class="social-networks">
-                        <!-- AddToAny BEGIN -->
-                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                            <a class="a2a_button_facebook"></a>
-                            <a class="a2a_button_email"></a>
-                            <a class="a2a_button_viber"></a>                          
-                        </div>
-                        <script async src="https://static.addtoany.com/menu/page.js"></script>
-                        <!-- AddToAny END -->
+                    <div class="align-center flex a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow">
+                        <ul class="contact_li">
+                                <!-- <li>
+                                    <a class="ico nav-link" data-a2a-follow="gra.ruh">m.me/gra.ruh</a>
+                                </li>
+                            <li>
+                                    <a class="ico nav-link" type="mailto" href="mailto:gra.ruh@gmail.com">gra.ruh@gmail.com</a>
+                            </li>
+                            <li>
+                                    <a class="ico nav-link" data-a2a-follow="gra.ruh">gra.ruh</a>
+                            </li>
+                            <li>
+                                    <a class="ico nav-link" href="tel:+380630616386">+380938440478</a>
+                            </li> -->
+                            
+                                    <li> <a class="ico a2a_button_facebook facebook-ico nav-link" data-a2a-follow="gra.ruh"></a>m.me/gra.ruh</li>
+                                    <li><a class="ico mail-ico nav-link" type="mailto" href="mailto:gra.ruh@gmail.com"></a>gra.ruh@gmail.com</li>
+                                    <li><a class="a2a_button_instagram ico instagram-ico nav-link" data-a2a-follow="gra.travel"></a>gra.travel</a></li>
+                                    <li><a class="ico viber-ico nav-link" href="tel:+380634221451"></a>+3806342214510</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <p>© 2018 Copyright Text </p>
+            <p>© GRA 2015-2019 </p>
         </div>
     </footer>
 
@@ -391,8 +350,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
 <!--        <script src="js/jquery.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
-  
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
 
     <!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="js/scrollPosStyler.js"></script>
@@ -402,7 +361,11 @@
 -->
     <!--    <script src="js/nivo-lightbox.min.js"></script>-->
     <script src="js/wow.min.js"></script>
-    <script src="js/core.js"></script>
+    <script src="js/data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <script src="js/core.js"></script>
+    <script src="js/trip-detail.js"></script>
+    <!-- <script src="js/core.js"></script> -->
     <script src="components/slick-slider/slick.min.js"></script>
     <script src="components/slick-slider/my-slick-slider.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->

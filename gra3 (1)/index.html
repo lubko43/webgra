@@ -253,8 +253,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum architecto tempora, excepturi blanditiis
-                                veniam sunt totam quo natus! Odio, ab.
+                            <p class="text-center">Моя історія почалася в електричці Львів  - Воловець у 2016 році, коли Тарас Кінь сказав: «нехай почнеться шоу». Від того часу я почав мандрувати з командою GRA та став її частиною.  Я не вмію довго сидіти на одному місці, тому робота провідника мені до душі.  Коли я бачу щасливі обличчя людей, що пішли з нами в гори – я отримую великий кайф, адже моя робота приносить щастя! Багато розказувати про себе не буду, познайомимося в горах)
                             </p>
     
                         </div>
@@ -444,7 +443,7 @@
                 </div>
             </div>
 
-            <div id="nanogallery2" data-nanogallery2></div>
+            <div id="nanogallery2"></div>
 
             <!-- <div id="nanogallery2" data-nanogallery2='{
                         "thumbnailHeight":  235,
@@ -510,7 +509,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <span class="input input-hoshi">
-                        <input class="input_field input_field-hoshi" type="text" name="name" id="input-4" />
+                        <input class="input_field input_field-hoshi" type="text" required name="name" id="input-4" />
                         <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
                             <span class="input_label-content input_label-content-hoshi">ПІБ учасника</span>
                         </label>
@@ -518,7 +517,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <span class="input input-hoshi">
-                        <input name="phone" class="input_field input_field-hoshi" type="text" id="phone" />
+                        <input name="phone"  required class="input_field input_field-hoshi" type="text" id="phone" />
                         <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="phone">
                             <span class="input_label-content input_label-content-hoshi">Телефон</span>
                         </label>
@@ -526,8 +525,8 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <span class="input input-hoshi">
-                        <input name="email" class="input_field input_field-hoshi" type="email" id="input-4" />
-                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                        <input name="email"  required class="input_field input_field-hoshi" type="email" id="email" />
+                        <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="email">
                             <span class="input_label-content input_label-content-hoshi">Email</span>
                         </label>
                     </span>
@@ -538,9 +537,9 @@
 
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <span class="input input-hoshi">
-                                <input name="birthDate" class=" datepicker-here input_field input_field-hoshi" data-startDate="1990-01-01" type="text" id="input-4"
+                                <input name="birthDate" required class=" datepicker-here input_field input_field-hoshi" data-startDate="1990-01-01" type="text" id="birthDate"
                                 />
-                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="birthDate">
                                     <span class="input_label-content input_label-content-hoshi">Дата народження</span>
                                 </label>
                             </span>
@@ -549,22 +548,22 @@
                             <span class="input input-hoshi">
                                 <!--					<input class="input_field input_field-hoshi" type="text" id="input-4" />-->
                                 <select id="select-trip" name="trip" class="input_field input_field-hoshi"></select>
-                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1">
                                     <span class="input_label-content input_label-content-hoshi">Вибрати мандрівку</span>
                                 </label>
                             </span>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <span class="input input-hoshi">
-                                <input name="description" class="input_field input_field-hoshi" type="text" id="input-4" />
-                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="input-4">
+                                <input name="description" class="input_field input_field-hoshi" type="text" id="description" />
+                                <label class="input_label input_label-hoshi input_label-hoshi-color-1" for="description">
                                     <span class="input_label-content input_label-content-hoshi">Чому йдете з нами</span>
                                 </label>
                             </span>
                         </div>
 
                         <div class="col-md-12 text-center register-container">
-                            <button type="submit" class="btn mg-0 btn-outline-secondary btn-lg">зареєструватись</button>
+                            <button type="submit" class="btn mg-0 btn-outline-secondary btn-lg" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">зареєструватись</button>
                         </div>
 
 
@@ -597,7 +596,7 @@
             Вітаємо!
         </p>
         <p>
-            Ви зареєстровані. Підтвердження реєстрації буде надіслано на вашу пошту.
+            <span id="clientName"></span>, Ви зареєстровані на мандрівку в <span id="clientTrip"></span>. Підтвердження реєстрації буде надіслано на вашу пошту.
         </p>
         <button id='ok'>
             OK
